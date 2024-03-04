@@ -1,0 +1,12 @@
+// Code Structure
+digraph {
+	node [shape=circle]
+	MyClass [shape=box]
+	"MyClass.method_a"
+	"MyClass.method_b"
+	"self.method_a" -> "MyClass.method_a"
+	function_c
+	instance -> MyClass [label="instance of"]
+	Global -> MyClass
+	"instance.method_a" -> method_a
+}
